@@ -1,3 +1,0 @@
-﻿# Web-2
-# Ejercicios
-# Ejercicios
