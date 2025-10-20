@@ -122,6 +122,10 @@ footer {
 .footer-brand {
     margin-top: 20px;
 }
+/* Añade esto temporalmente a tu main.css para depurar */
+nav.hidden-xs {
+    border: 3px solid red !important; /* Borde rojo visible */
+}
 
 /* Responsive Overrides */
 @media (max-width: 767px) { /* Estilos para XS screens */
