@@ -21,6 +21,89 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #e6eef2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    color: #005A9C;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}
+.doc {
+    display: block;
+    width: 60%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #e6eef2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 0 auto;
+}
+
+.fractura {
+    display: block;
+    width: 60%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #e6eef2;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    object-fit: cover;
+    background-color: #fff;
+    padding: 6px;
+    transition: transform .18s ease, box-shadow .18s ease;
+    cursor: pointer;
+}
+
+.fractura:hover,
+.fractura:focus {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    outline: none;
+}
+
+/* Variante para pantallas grandes */
+@media (min-width: 992px) {
+    .fractura {
+        max-width: 360px;
+    }
+}
+
+/* Ajustes en móvil para evitar desbordes y centrar */
+@media (max-width: 767px) {
+    .fractura {
+        max-width: 100%;
+        padding: 4px;
+    }
+}
+
+/* Variante para pantallas grandes */
+@media (min-width: 992px) {
+    .doc {
+        max-width: 340px;
+    }
+}
+
+/* Espaciado "margin-end" equivalente a .me-2 (8px) */
+.me-2 {
+    margin-right: .5rem;
+}
 .image-placeholder {
     min-height: 150px;
 }
