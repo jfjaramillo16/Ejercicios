@@ -1,0 +1,152 @@
+/* Estilos Generales */
+body {
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* Placeholders y Ayudas Visuales */
+.logo-placeholder,
+.image-placeholder,
+.image-placeholder-large {
+    border: 2px dashed #aaa;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+    min-height: 50px;
+    background-color: #eee;
+    display: flex; /* Centrar texto verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    min-height: 150px;
+}
+.image-placeholder-large {
+    min-height: 200px;
+}
+
+/* Espaciado y Separadores */
+.section-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.separator {
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Alineación Vertical */
+.vertical-align {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Header */
+header nav ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+header nav li {
+    padding: 0 10px;
+}
+.nav-link { /* Usamos span ahora */
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #000;
+}
+.xs-nav-margin {
+    margin-top: 15px;
+}
+
+/* Área Principal 1: Título y Textos de Acción */
+.action-buttons span { /* Estilo para los span en lugar de botones */
+    margin-right: 15px; /* Espacio entre los textos */
+    margin-top: 15px;
+    display: inline-block; /* Para que el margen funcione bien */
+    font-weight: bold; /* Hacerlos resaltar un poco */
+    color: #555; /* Color similar al nav */
+}
+
+/* Área Principal 2: Sedes */
+.sede-box {
+    border: 2px solid #aaa;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sede-box h4 {
+    margin-top: 0;
+}
+.sede-box hr {
+    border-top: 1px solid #ddd;
+    width: 60%;
+    margin: 10px auto;
+}
+.sede-box span { /* Estilo para el span 'Ubicación' */
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px; /* Espacio sobre el texto */
+}
+
+
+/* Footer */
+footer {
+    background-color: #e9e9e9;
+}
+.footer-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer-item p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.footer-line {
+    border-top: 2px solid #888;
+    width: 60%;
+    margin: 3px auto;
+}
+.footer-brand {
+    margin-top: 20px;
+}
+/* Añade esto temporalmente a tu main.css para depurar */
+nav.hidden-xs {
+    border: 3px solid red !important; /* Borde rojo visible */
+}
+
+/* Responsive Overrides */
+@media (max-width: 767px) { /* Estilos para XS screens */
+    .text-right {
+        text-align: left;
+    }
+    .action-buttons span { /* Ajuste para los textos de acción en móvil */
+        display: block; /* Un texto por línea */
+        margin-bottom: 10px;
+        margin-right: 0;
+        text-align: center; /* Centrar los textos */
+    }
+    .vertical-align {
+        display: block;
+    }
+    .footer-item {
+        text-align: center !important;
+    }
+    .sede-box {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
