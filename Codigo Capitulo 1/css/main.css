@@ -1,0 +1,63 @@
+		body {
+            /* Un fondo para que el formulario resalte, como en la imagen */
+            background-color: #f4f4f4; 
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 60px auto; /* Centra el formulario vertical y horizontalmente */
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center; /* Centra el contenido (foto, título, iconos) */
+        }
+
+        /* REQUISITO 1: Título */
+        .login-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        /* REQUISITO 2: Foto en círculo */
+        .profile-photo {
+            width: 130px;  /* Tamaño de la foto */
+            height: 130px;
+            border-radius: 50%; /* Esto la hace un círculo perfecto */
+            object-fit: cover;  /* Asegura que la imagen llene el círculo */
+            margin-bottom: 25px;
+            border: 4px solid #eee; /* Borde opcional */
+        }
+
+        /* Estilo para el botón de ancho completo */
+        .btn-ingresar {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        /* Enlace de "olvidó contraseña" */
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        /* REQUISITO 3: Iconos de redes sociales */
+        .social-icons {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee; /* Línea divisoria */
+            font-size: 28px; /* Tamaño de los iconos */
+        }
+
+        .social-icons span {
+            margin: 0 12px; /* Separación entre iconos */
+            color: #777;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .social-icons span:hover {
+            color: #007bff; /* Color al pasar el mouse */
+        }
